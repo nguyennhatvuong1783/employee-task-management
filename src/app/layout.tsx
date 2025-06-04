@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Real-Time Employee Task Management Tool",
