@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
+import { AddEditEmployee } from "@/components/Dialog/add-edit-employee";
+import { DeleteEmployee } from "@/components/AlertDialog/delete-employee";
 
 export const columns: ColumnDef<Employee>[] = [
   {
@@ -79,22 +81,15 @@ export const columns: ColumnDef<Employee>[] = [
   },
   {
     id: "actions",
+    header: () => <span className="font-bold">Action</span>,
     cell: ({ row }) => {
       const employee = row.original;
 
       return (
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="h-8 w-8 p-0">
-              <span className="sr-only">Open menu</span>
-              <MoreHorizontal className="h-4 w-4" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem>Edit</DropdownMenuItem>
-            <DropdownMenuItem>Delete</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <div className="flex items-center gap-2">
+          <AddEditEmployee type="edit" data={employee} />
+          <DeleteEmployee employee={employee} />
+        </div>
       );
     },
   },
