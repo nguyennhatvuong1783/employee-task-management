@@ -2,16 +2,8 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 import { Employee } from "@/types/employees";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { ArrowUpDown, MoreHorizontal } from "lucide-react";
+import { ArrowUpDown } from "lucide-react";
 import { AddEditEmployee } from "@/components/Dialog/add-edit-employee";
 import { DeleteEmployee } from "@/components/AlertDialog/delete-employee";
 
