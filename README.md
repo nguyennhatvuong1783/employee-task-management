@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fullstack Web Application (Next.js + Express.js + Cloud Firestore + Twilio)
 
-## Getting Started
+## Front-end (Next.js + Tailwind CSS + shadcn/ui)
 
-First, run the development server:
+### Structure
+
+- Sign in with phone number page for Owner
+- Phone verification page
+- Dashboard page include:
+	+ Employee management (Add, edit, delete, filter)
+	+ Task management (Not done)
+	+ Message (Not done)
+
+### Run front-end
 
 ```bash
+#Change directory Front-end
+cd Front-end/
+
+#Install dependencies necessary
+npm i
+
+#Run dev environment
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+#Run product environment
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Back-end (Express.js + Cloud Firestore + Twilio)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Employee module: CURD employee basic
+- Auth module: createNewAccessCode to send sms for Owner and validateAccessCode to authentication and return jwt
+- Message module (Not done)
+- Employee role (Not done)
 
-## Learn More
+### Run back-end
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+#Change directory Back-end
+cd Back-end/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#Install dependencies necessary
+npm i
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#Create file .env from file .env.example
+cp .env.example .env
 
-## Deploy on Vercel
+#Config firebase, jwt secret and twilio in file .env
+#Example
+PORT=8000
+JWT_SECRET=your-jwt-secret
+JWT_EXPIRES_IN=1h
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+FIREBASE_API_KEY=your-firebase-api-key
+FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
+FIREBASE_PROJECT_ID=your-firebase-project-id
+FIREBASE_STORAGE_BUCKET=your-firebase-storage-bucket
+FIREBASE_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
+FIREBASE_APP_ID=your-firebase-app-id
+FIREBASE_MEASUREMENT_ID=your-firebase-measurement-id
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+TWILIO_ACCOUNT_SID=your-twilio-account-sid
+TWILIO_AUTH_TOKEN=your-twilio-auth-token
+TWILIO_PHONE_NUMBER=your-twilio-phone-number
+
+#Run back-end
+npm start
+```
