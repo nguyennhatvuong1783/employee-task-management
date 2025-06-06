@@ -77,7 +77,7 @@ npm start
 <img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot1.png" alt="SigninPage" width="100%">
 
 - Sms will be sent to your phone number
-<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot6.png" alt="SmsPhoneNumber" width="100%">
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot6.png" alt="SmsPhoneNumber" width="50%">
 
 ### Phone verification page
 <img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot2.png" alt="PhoneVerificationPage" width="100%">
@@ -87,6 +87,12 @@ npm start
 
 - Employee management
 <img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot4.png" alt="EmployeeManagementInterface" width="100%">
+
+- Add employee
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot7.png" alt="EmployeeManagementInterface" width="100%">
+
+- Delete employee
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot8.png" alt="EmployeeManagementInterface" width="100%">
 
 - Message
 <img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot5.png" alt="MessageInterface" width="100%">
