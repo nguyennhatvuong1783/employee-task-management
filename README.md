@@ -70,3 +70,23 @@ TWILIO_PHONE_NUMBER=your-twilio-phone-number
 #Run back-end
 npm start
 ```
+
+# Screenshots of my application
+
+### Sign in page
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot1.png" alt="SigninPage" width="100%">
+
+- Sms will be sent to your phone number
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot6.png" alt="SmsPhoneNumber" width="100%">
+
+### Phone verification page
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot2.png" alt="PhoneVerificationPage" width="100%">
+
+### Dashboard page
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot3.png" alt="DashboardPage" width="100%">
+
+- Employee management
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot4.png" alt="EmployeeManagementInterface" width="100%">
+
+- Message
+<img src="https://raw.githubusercontent.com/nguyennhatvuong1783/employee-task-management/refs/heads/main/Front-end/public/images/Screenshot5.png" alt="MessageInterface" width="100%">

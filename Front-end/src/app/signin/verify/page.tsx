@@ -63,7 +63,7 @@ export default function Verify() {
                     icon: "success",
                     title: "Sign in successfully",
                 });
-                cookieStore.set("token", response.data.token);
+                document.cookie = `token=${response.data.token}; path=/;`;
                 router.push("/dashboard");
             }
         } catch (error) {
